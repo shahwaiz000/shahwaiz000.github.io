@@ -80,6 +80,13 @@
   .contact .btn.primary{background:var(--blue);border-color:var(--blue)}
   .contact .btns{justify-content:center}
   footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:14px}
+  .pst{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:26px}
+  .pst>div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+  .pst .pl{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+  .pst p{margin:0;font-size:15.5px}
+  .ic{font-size:26px;margin-bottom:8px}
+  .chips.big span{font-size:15px;padding:7px 15px}
+  .proj p b{color:var(--ink)}
   .hood{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
   .hood-top{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
   .hood-title{margin:0;font-size:20px;color:var(--ink);letter-spacing:-.3px}
@@ -99,7 +106,7 @@
   #zoom img{max-width:100%;max-height:100%;border-radius:10px}
   @media(max-width:860px){
     h1{font-size:38px}.lead{font-size:18px}
-    .three,.more,.skills{grid-template-columns:1fr}
+    .three,.more,.skills,.pst{grid-template-columns:1fr}
     .feature{padding:22px}
     nav .links a:not(.cv){display:none}
     section{padding:60px 0}.hero{padding:60px 0 50px}
@@ -112,35 +119,51 @@
 <nav><div class="wrap">
   <div class="brand">Shahwaiz Bilal</div>
   <div class="links">
-    <a href="#work">Work</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a href="#can">What I can build</a><a href="#work">What I built</a><a href="#experience">About me</a><a href="#contact">Contact</a>
     <a class="cv" href="Shahwaiz-Bilal-CV.pdf" download>Download CV</a>
   </div>
 </div></nav>
 
 <header class="hero"><div class="wrap">
   <div class="tag">AI Automation Specialist · Riyadh, Saudi Arabia</div>
-  <h1>I build AI systems that take<br><span>repetitive work</span> off people's desks.</h1>
-  <p class="lead">I work in finance at iMile, where I settle 2,000 to 3,000 cash-on-delivery orders every day. Doing the same manual work every day is what got me into automation. Now I turn slow, manual processes into systems that run on their own.</p>
+  <h1>Hi, I'm Shahwaiz.<br>I make <span>office work run by itself.</span></h1>
+  <p class="lead">I work in finance at iMile, a delivery company in Riyadh. Every day I saw people doing the same work by hand: sending emails, answering the same questions, checking numbers. So I started building AI tools that do this work automatically.</p>
   <div class="btns">
-    <a class="btn primary" href="#work">See my work</a>
+    <a class="btn primary" href="#work">See what I built</a>
     <a class="btn" href="Shahwaiz-Bilal-CV.pdf" download>Download CV</a>
     <a class="btn" href="https://www.linkedin.com/in/shahwaiz-bilal-360baa302" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="https://github.com/shahwaiz000" target="_blank" rel="noopener">GitHub</a>
   </div>
   <div class="facts">
-    <div><b>3</b><span>AI automation projects</span></div>
-    <div><b>1 minute</b><span>for 50 station salary emails</span></div>
-    <div><b>English + Arabic</b><span>AI answers on Telegram</span></div>
+    <div><b>3</b><span>working automation projects</span></div>
+    <div><b>3 hours → 1 minute</b><span>for 50 salary emails</span></div>
+    <div><b>English + Arabic</b><span>AI that answers staff questions</span></div>
   </div>
 </div></header>
 
+<section id="can"><div class="wrap">
+  <div class="eyebrow">What I can build for you</div>
+  <h2>If a task is boring and repeated, I can automate it.</h2>
+  <p class="sub">Here is the kind of work I take off a team's desk.</p>
+  <div class="skills">
+    <div class="skill"><div class="ic">✉️</div><h3>Emails and reports that send themselves</h3><p>The right report goes to the right people at the right time, without anyone pressing a button.</p></div>
+    <div class="skill"><div class="ic">💬</div><h3>AI assistants for staff or customers</h3><p>A chat assistant on Telegram or WhatsApp that answers questions from your own company data, in English and Arabic.</p></div>
+    <div class="skill"><div class="ic">📄</div><h3>AI that reads documents</h3><p>Invoices, receipts and bank slips are read by AI, checked for mistakes, and entered into your system for you.</p></div>
+    <div class="skill"><div class="ic">📊</div><h3>Clear dashboards for managers</h3><p>Power BI dashboards that show the numbers a manager needs in one look, updated automatically.</p></div>
+  </div>
+</div></section>
+
 <section id="work"><div class="wrap">
-  <div class="eyebrow">Featured project</div>
-  <h2>PayDesk: AI payroll automation</h2>
-  <p class="sub">Built from a real problem at my own desk.</p>
+  <div class="eyebrow">What I have already built</div>
+  <h2>PayDesk: payroll that runs itself</h2>
+  <p class="sub">My biggest project, built from a real problem at my own desk.</p>
 
   <div class="feature">
-    <p class="quote">"Why was my salary cut?" Drivers kept asking me this, and I had no answer, because I handle cash, not payroll. So I built a system that answers them.</p>
+    <div class="pst">
+      <div><div class="pl">The problem</div><p>Drivers kept asking me <b>"Why was my salary cut?"</b> I had no answer, because I handle cash, not payroll. Salary emails to 50 stations also took 2 to 3 hours by hand.</p></div>
+      <div><div class="pl">What I built</div><p>A system where the computer does the payroll work: it sends the emails, explains every salary with AI, and checks that cash was really paid.</p></div>
+      <div><div class="pl">The result</div><p><b>2 to 3 hours of work now takes about 1 minute.</b> Drivers get answers in seconds, and paper signature sheets are no longer needed.</p></div>
+    </div>
     <div class="shot"><img src="img/paydesk-dashboard.jpg" alt="PayDesk dashboard showing the October payroll, the AI assistant chat in English and Arabic, and the three automations"></div>
 
     <div class="three">
@@ -152,10 +175,10 @@
     <div class="hood">
       <div class="hood-top">
         <div>
-          <div class="eyebrow" style="margin:0 0 4px">Under the hood</div>
-          <h4 class="hood-title">The automation behind PayDesk</h4>
+          <div class="eyebrow" style="margin:0 0 4px">Behind the scenes</div>
+          <h4 class="hood-title">How PayDesk works on its own</h4>
           <div class="stats"><div><b>4</b>n8n workflows</div><div><b>57</b>automated steps</div><div><b>53</b>connections</div><div><b>5</b>apps connected</div><div><b>3 sec</b>check for new messages</div></div>
-          <p class="hood-sub">These are the real workflows behind PayDesk, drawn from the actual n8n files. Each box is one step.</p>
+          <p class="hood-sub">Each box below is one step the computer does by itself, and the arrows show the order. For example: the manager approves the month → the system gets the salary list → AI writes the Arabic text → 50 emails go out → everything is logged. These are my real workflows, built in n8n.</p>
         </div>
         <div class="legend"><i style="--c:#16a34a"></i>Trigger <i style="--c:#0b57d0"></i>PayDesk API <i style="--c:#0284c7"></i>Telegram <i style="--c:#2563eb"></i>Gemini AI <i style="--c:#ea580c"></i>Code <i style="--c:#7c3aed"></i>Decision <i style="--c:#dc2626"></i>Gmail <i style="--c:#15803d"></i>Sheets</div>
       </div>
@@ -178,7 +201,7 @@
 
   <div style="height:64px"></div>
   <div class="eyebrow">More work</div>
-  <h2>Other projects</h2>
+  <h2>My other projects</h2>
   <p class="sub">Each one started with a task that took too long by hand.</p>
 
   <div class="more">
@@ -186,7 +209,7 @@
       <div class="pic text">🧾</div>
       <div class="body">
         <h3>Invoice &amp; Payment Autopilot</h3>
-        <p>AI reads supplier invoices from email, checks 15% VAT, duplicates, ZATCA QR code and PO number, sends approvals by amount, and builds a weekly payment plan.</p>
+        <p><b>Problem:</b> checking supplier invoices by hand is slow and mistakes are easy to miss.<br><b>What it does:</b> AI reads each invoice from email, checks VAT, duplicates and the ZATCA QR code, asks the right manager to approve, and plans the weekly payments.</p>
         <div class="tools">n8n · Gemini AI · Gmail · Google Sheets</div>
         <a class="go" href="https://github.com/shahwaiz000/invoice-autopilot" target="_blank" rel="noopener">View project →</a>
       </div>
@@ -195,7 +218,7 @@
       <div class="pic"><img src="img/codesk-overview.jpg" alt="CODesk overview of every station's cash"></div>
       <div class="body">
         <h3>CODesk: cash and COD supervision</h3>
-        <p>One screen showing every station's cash, card payments, expenses and bank deposits. AI reads bank slips and card receipts, and a daily PDF report goes to the manager.</p>
+        <p><b>Problem:</b> a supervisor has to check cash from many stations in many files.<br><b>What it does:</b> one screen shows every station's cash and deposits, AI reads bank slips and receipts, and a daily report goes to the manager.</p>
         <div class="tools">Python · React · Gemini AI</div>
         <a class="go" href="https://github.com/shahwaiz000/codesk" target="_blank" rel="noopener">View project →</a>
       </div>
@@ -204,7 +227,7 @@
       <div class="pic text">📊</div>
       <div class="body">
         <h3>Power BI dashboards</h3>
-        <p>Clean dashboards that answer the questions a manager actually asks: where the money comes from, which branches lead and how numbers move over time. Built on real business data, so I walk through them in interviews.</p>
+        <p><b>Problem:</b> managers get long spreadsheets but need quick answers.<br><b>What it does:</b> clean dashboards show where the money comes from, which branches lead and how numbers change. They use real company data, so I show them in interviews.</p>
         <div class="tools">Power BI · Power Query · DAX · Excel</div>
         <a class="go" href="#contact">Ask for a walkthrough →</a>
       </div>
@@ -213,20 +236,14 @@
 </div></section>
 
 <section id="skills"><div class="wrap">
-  <div class="eyebrow">Skills</div>
-  <h2>What I'm good at</h2>
-  <p class="sub">Finance work first, with the skills to automate it.</p>
-  <div class="skills">
-    <div class="skill"><h3>AI automation</h3><p>Finding the slow, manual parts of a business and turning them into systems that run on their own.</p></div>
-    <div class="skill"><h3>Dashboards and reporting</h3><p>Clean, professional Power BI dashboards that show managers what matters at a glance, from data cleaning and modelling to DAX and the final design.</p></div>
-    <div class="skill"><h3>Finance operations</h3><p>Reconciliation, cash control, payroll and management reporting.</p></div>
-    <div class="skill"><h3>Tools</h3><p>n8n, Power Automate, Python, SQL, Power BI, Excel, Gemini API, REST APIs and webhooks, Telegram bots, Git and GitHub.</p></div>
-  </div>
+  <div class="eyebrow">Tools I use</div>
+  <h2>The tools behind my work</h2>
+  <div class="chips big"><span>n8n</span><span>Power Automate</span><span>Python</span><span>SQL</span><span>Power BI</span><span>Excel</span><span>Gemini AI</span><span>ChatGPT and Claude</span><span>Telegram bots</span><span>Gmail and Google Sheets</span><span>REST APIs and webhooks</span><span>Git and GitHub</span></div>
 </div></section>
 
 <section id="experience"><div class="wrap">
-  <div class="eyebrow">Experience</div>
-  <h2>Where I work</h2>
+  <div class="eyebrow">About me</div>
+  <h2>My work and studies</h2>
   <div class="job" style="margin-top:28px"><h3>Finance Executive</h3><span>Aug 2025 – Present</span></div>
   <div class="org">iMile Delivery Services, Riyadh</div>
   <ul>
