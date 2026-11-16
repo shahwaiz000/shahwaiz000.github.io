@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1768" height="92" viewBox="0 0 2210 115" font-family="Inter,Arial,sans-serif">
+<defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#dfe3ea"/></pattern>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#94a3b8"/></marker></defs>
+<rect width="100%" height="100%" fill="#fafbfc"/><rect width="100%" height="100%" fill="url(#g)"/>
+<path d="M210,66 C250,66 220,66 258,66" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<path d="M430,66 C470,66 440,66 478,66" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<path d="M650,66 C690,66 660,66 698,66" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<path d="M870,66 C910,66 880,66 918,66" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1090,66 C1130,66 1100,66 1138,66" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1310,66 C1350,66 1320,66 1358,66" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1530,66 C1570,66 1540,66 1578,66" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1750,66 C1790,66 1760,66 1798,66" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1970,66 C2010,66 1980,66 2018,66" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<g><rect x="40" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#16a34a" stroke-width="1.6"/><rect x="40" y="37" width="6" height="58" rx="3" fill="#16a34a"/><text x="56" y="60" font-size="11" font-weight="700" fill="#16a34a">TRIGGER</text><text x="56" y="79" font-size="12.5" fill="#1f2937">Salary messages start</text></g>
+<g><rect x="260" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#0b57d0" stroke-width="1.6"/><rect x="260" y="37" width="6" height="58" rx="3" fill="#0b57d0"/><text x="276" y="60" font-size="11" font-weight="700" fill="#0b57d0">PAYDESK API</text><text x="276" y="79" font-size="12.5" fill="#1f2937">PayDesk: bot info</text></g>
+<g><rect x="480" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#0b57d0" stroke-width="1.6"/><rect x="480" y="37" width="6" height="58" rx="3" fill="#0b57d0"/><text x="496" y="60" font-size="11" font-weight="700" fill="#0b57d0">PAYDESK API</text><text x="496" y="79" font-size="12.5" fill="#1f2937">PayDesk: salary messages</text></g>
+<g><rect x="700" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#ea580c" stroke-width="1.6"/><rect x="700" y="37" width="6" height="58" rx="3" fill="#ea580c"/><text x="716" y="60" font-size="11" font-weight="700" fill="#ea580c">CODE</text><text x="716" y="79" font-size="12.5" fill="#1f2937">Split salary messages</text></g>
+<g><rect x="920" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#ea580c" stroke-width="1.6"/><rect x="920" y="37" width="6" height="58" rx="3" fill="#ea580c"/><text x="936" y="60" font-size="11" font-weight="700" fill="#ea580c">CODE</text><text x="936" y="79" font-size="12.5" fill="#1f2937">Arabic prompt</text></g>
+<g><rect x="1140" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#2563eb" stroke-width="1.6"/><rect x="1140" y="37" width="6" height="58" rx="3" fill="#2563eb"/><text x="1156" y="60" font-size="11" font-weight="700" fill="#2563eb">GEMINI AI</text><text x="1156" y="79" font-size="12.5" fill="#1f2937">Gemini: Arabic</text></g>
+<g><rect x="1360" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#ea580c" stroke-width="1.6"/><rect x="1360" y="37" width="6" height="58" rx="3" fill="#ea580c"/><text x="1376" y="60" font-size="11" font-weight="700" fill="#ea580c">CODE</text><text x="1376" y="79" font-size="12.5" fill="#1f2937">Build message</text></g>
+<g><rect x="1580" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#0284c7" stroke-width="1.6"/><rect x="1580" y="37" width="6" height="58" rx="3" fill="#0284c7"/><text x="1596" y="60" font-size="11" font-weight="700" fill="#0284c7">TELEGRAM</text><text x="1596" y="79" font-size="12.5" fill="#1f2937">Telegram: send salary</text></g>
+<g><rect x="1800" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#ea580c" stroke-width="1.6"/><rect x="1800" y="37" width="6" height="58" rx="3" fill="#ea580c"/><text x="1816" y="60" font-size="11" font-weight="700" fill="#ea580c">CODE</text><text x="1816" y="79" font-size="12.5" fill="#1f2937">Result</text></g>
+<g><rect x="2020" y="37" width="170" height="58" rx="9" fill="#fff" stroke="#0b57d0" stroke-width="1.6"/><rect x="2020" y="37" width="6" height="58" rx="3" fill="#0b57d0"/><text x="2036" y="60" font-size="11" font-weight="700" fill="#0b57d0">PAYDESK API</text><text x="2036" y="79" font-size="12.5" fill="#1f2937">PayDesk: report result</text></g>
+</svg>

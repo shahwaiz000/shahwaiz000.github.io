@@ -3,206 +3,270 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shahwaiz · Finance & Data</title>
-<meta name="description" content="Shahwaiz: finance executive in Riyadh who builds tools for cash reconciliation, reporting and dashboards.">
+<title>Shahwaiz Bilal · AI Automation Specialist</title>
+<meta name="description" content="Shahwaiz Bilal – AI Automation Specialist in Riyadh. I build AI systems that take repetitive work off people's desks.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#f4f5f2; --panel:#ffffff; --ink:#15211b; --soft:#4d5a53; --faint:#7b867f;
-  --line:#e2e5df; --accent:#1d6b4a; --accent-soft:#e3f0e8; --gold:#a8741a; --shadow:0 1px 2px rgba(20,33,27,.06),0 8px 24px rgba(20,33,27,.06);
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0f1512; --panel:#17201b; --ink:#e8ede9; --soft:#b3beb7; --faint:#86928b;
-  --line:#26312b; --accent:#5cc493; --accent-soft:#1c3328; --gold:#e0b25a; --shadow:0 1px 2px rgba(0,0,0,.3);
-}}
-:root[data-theme="dark"]{
-  --bg:#0f1512; --panel:#17201b; --ink:#e8ede9; --soft:#b3beb7; --faint:#86928b;
-  --line:#26312b; --accent:#5cc493; --accent-soft:#1c3328; --gold:#e0b25a; --shadow:0 1px 2px rgba(0,0,0,.3);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:var(--accent)}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-nav b{font-weight:700;letter-spacing:-.01em}
-nav .links{display:flex;gap:22px;font-size:14px}
-nav .links a{color:var(--soft);text-decoration:none}
-nav .links a:hover{color:var(--ink)}
-header{padding:88px 0 64px}
-.kicker{font:500 13px/1 "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.04em;text-transform:uppercase}
-h1{font-size:clamp(34px,5.5vw,54px);line-height:1.08;letter-spacing:-.03em;margin:18px 0 20px;max-width:16ch}
-.lead{font-size:19px;color:var(--soft);max-width:60ch;margin:0}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--panel)}
-.btn.main{background:var(--accent);border-color:var(--accent);color:#fff}
-:root[data-theme="dark"] .btn.main{color:#0f1512}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.main{color:#0f1512}}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:56px}
-.facts div{background:var(--panel);padding:20px 22px}
-.facts dt{font-size:13px;color:var(--faint)}
-.facts dd{margin:4px 0 0;font-weight:600}
-section{padding:56px 0;border-top:1px solid var(--line)}
-h2{font-size:28px;letter-spacing:-.02em;margin:10px 0 8px}
-.sub{color:var(--soft);margin:0 0 32px;max-width:62ch}
-.project{background:var(--panel);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;margin-bottom:28px}
-.project .body{padding:28px 30px 30px}
-.project h3{font-size:24px;margin:0 0 4px;letter-spacing:-.02em}
-.tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin-right:6px}
-.project p{color:var(--soft);margin:12px 0}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:18px}
-.cols h4{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--faint);margin:0 0 8px}
-.cols ul{margin:0;padding-left:18px;color:var(--soft)}
-.cols li{margin:4px 0}
-.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:0 30px 30px}
-.shots figure{margin:0}
-.shots img{width:100%;display:block;border-radius:10px;border:1px solid var(--line);cursor:zoom-in}
-.shots figcaption{font-size:13px;color:var(--faint);margin-top:6px}
-.hero-shot{padding:0;border-bottom:1px solid var(--line);background:var(--bg)}
-.hero-shot img{width:100%;display:block;cursor:zoom-in}
-.stack{font:500 13px/1.6 "JetBrains Mono",monospace;color:var(--faint);margin-top:18px}
-.plain{padding:28px 30px}
-.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.skill{background:var(--panel);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
-.skill h3{margin:0 0 8px;font-size:17px}
-.skill p{margin:0;color:var(--soft);font-size:15px}
-.contact{display:flex;flex-wrap:wrap;gap:12px}
-footer{padding:32px 0 48px;color:var(--faint);font-size:14px;border-top:1px solid var(--line)}
-.note{font-size:14px;color:var(--faint);background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin-top:14px}
-#zoom{position:fixed;inset:0;background:rgba(10,14,12,.86);display:none;align-items:center;justify-content:center;padding:20px;z-index:10;cursor:zoom-out}
-#zoom img{max-width:100%;max-height:100%;border-radius:8px}
-@media (max-width:760px){
-  header{padding:56px 0 40px}
-  nav .links{gap:14px;font-size:13px}
-  .facts,.skills{grid-template-columns:1fr}
-  .cols,.shots{grid-template-columns:1fr}
-  .project .body,.plain{padding:22px}
-  .shots{padding:0 22px 22px}
-}
+  :root{--ink:#111827;--text:#374151;--muted:#6b7280;--line:#e5e7eb;--soft:#f6f8fb;--blue:#0b57d0;--blue-soft:#eaf1fd}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--text);font-size:17px;line-height:1.6;background:#fff}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  nav{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  nav .brand{font-weight:700;color:var(--ink)}
+  nav .links a{color:var(--text);margin-left:26px;font-size:15px;font-weight:500}
+  nav .links a.cv{color:#fff;background:var(--blue);padding:8px 14px;border-radius:8px}
+  nav .links a:hover{text-decoration:none;color:var(--blue)}
+  nav .links a.cv:hover{color:#fff;background:#0947ad}
+  .hero{padding:90px 0 70px}
+  .tag{display:inline-block;font-size:13px;font-weight:600;color:var(--blue);background:var(--blue-soft);padding:5px 12px;border-radius:99px;margin-bottom:20px}
+  h1{font-size:54px;line-height:1.08;letter-spacing:-1.5px;color:var(--ink);margin:0 0 20px;font-weight:800}
+  h1 span{color:var(--blue)}
+  .lead{font-size:20px;max-width:640px;margin:0 0 32px;color:var(--text)}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--ink);background:#fff}
+  .btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+  .btn:hover{text-decoration:none;border-color:var(--blue)}
+  .btn.primary:hover{background:#0947ad}
+  .facts{display:flex;gap:44px;flex-wrap:wrap;margin-top:56px;padding-top:28px;border-top:1px solid var(--line)}
+  .facts b{display:block;font-size:28px;color:var(--ink);letter-spacing:-.5px}
+  .facts span{font-size:14px;color:var(--muted)}
+  section{padding:80px 0;border-top:1px solid var(--line)}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+  h2{font-size:36px;letter-spacing:-.8px;color:var(--ink);margin:0 0 14px;line-height:1.2}
+  .sub{max-width:660px;color:var(--text);margin:0 0 40px}
+  .feature{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:36px}
+  .feature .head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+  .feature h3{font-size:28px;margin:0;color:var(--ink);letter-spacing:-.5px}
+  .feature .head p{margin:6px 0 0;color:var(--muted)}
+  .quote{font-size:19px;color:var(--ink);border-left:3px solid var(--blue);padding:4px 0 4px 18px;margin:0 0 28px;max-width:760px}
+  .shot{border-radius:12px;border:1px solid var(--line);overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(17,24,39,.08);cursor:zoom-in}
+  .shot img{display:block;width:100%}
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+  .card .num{font-size:13px;font-weight:700;color:var(--blue)}
+  .card h4{margin:6px 0 8px;font-size:18px;color:var(--ink)}
+  .card p{margin:0;font-size:15.5px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .chips span{font-size:13px;font-weight:500;background:#fff;border:1px solid var(--line);border-radius:99px;padding:4px 12px;color:var(--text)}
+  .more{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .proj{border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+  .proj .pic{height:170px;background:var(--soft);border-bottom:1px solid var(--line);overflow:hidden;cursor:zoom-in}
+  .proj .pic img{width:100%;height:100%;object-fit:cover;object-position:top left}
+  .proj .pic.text{display:flex;align-items:center;justify-content:center;font-size:44px;cursor:default}
+  .proj .body{padding:22px;display:flex;flex-direction:column;flex:1}
+  .proj h3{margin:0 0 8px;font-size:19px;color:var(--ink)}
+  .proj p{margin:0 0 16px;font-size:15.5px;flex:1}
+  .proj .tools{font-size:13px;color:var(--muted);margin-bottom:14px}
+  .proj a.go{font-weight:600;font-size:15px}
+  .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .skill{border:1px solid var(--line);border-radius:14px;padding:24px}
+  .skill h3{margin:0 0 6px;font-size:18px;color:var(--ink)}
+  .skill p{margin:0;font-size:15.5px}
+  .job{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .job h3{margin:0;font-size:19px;color:var(--ink)}
+  .job span{color:var(--muted);font-size:15px}
+  .org{color:var(--muted);margin:2px 0 12px}
+  ul{margin:0;padding-left:20px}li{margin:6px 0}
+  .contact{background:var(--ink);color:#d1d5db;border-radius:20px;padding:56px 44px;text-align:center}
+  .contact h2{color:#fff}
+  .contact p{max-width:560px;margin:0 auto 28px}
+  .contact .btn{background:transparent;color:#fff;border-color:#4b5563}
+  .contact .btn.primary{background:var(--blue);border-color:var(--blue)}
+  .contact .btns{justify-content:center}
+  footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:14px}
+  .hood{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+  .hood-top{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+  .hood-title{margin:0;font-size:20px;color:var(--ink);letter-spacing:-.3px}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 6px}.stats div{border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:13px;color:var(--muted);background:var(--soft)}.stats b{display:block;font-size:22px;color:var(--ink);letter-spacing:-.4px}
+  .hood-sub{margin:4px 0 0;font-size:15px;color:var(--muted)}
+  .legend{font-size:12.5px;color:var(--muted);line-height:2;margin-left:-10px}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--c);margin:0 5px 0 10px;vertical-align:-1px}
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+  .tabs button{font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line);background:#fff;color:var(--text);border-radius:99px;padding:7px 14px;cursor:pointer}
+  .tabs button span{font-weight:500;color:var(--muted);margin-left:4px}
+  .tabs button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+  .tabs button.on span{color:#cfe0ff}
+  .canvas{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fafbfc}
+  .canvas img{display:block;max-width:none}
+  .hood-note{margin:8px 0 0;font-size:13px;color:var(--muted)}
+  #zoom{position:fixed;inset:0;background:rgba(17,24,39,.85);display:none;align-items:center;justify-content:center;z-index:50;padding:30px;cursor:zoom-out}
+  #zoom img{max-width:100%;max-height:100%;border-radius:10px}
+  @media(max-width:860px){
+    h1{font-size:38px}.lead{font-size:18px}
+    .three,.more,.skills{grid-template-columns:1fr}
+    .feature{padding:22px}
+    nav .links a:not(.cv){display:none}
+    section{padding:60px 0}.hero{padding:60px 0 50px}
+    .facts{gap:28px}
+  }
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b>Shahwaiz</b><div class="links"><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
 
-<header class="wrap">
-  <div class="kicker">Finance · Data · Automation</div>
-  <h1>I turn daily cash checks into simple tools.</h1>
-  <p class="lead">I'm Shahwaiz, a finance executive at a logistics company in Riyadh. My day is cash on delivery: collecting from drivers, matching card payments to orders, and making sure the cash reaches the bank. I build small, practical apps and dashboards that make that work faster and harder to get wrong.</p>
-  <div class="btns">
-    <a class="btn main" href="#work">See my projects</a>
-    <a class="btn" href="https://www.linkedin.com/in/shahwaiz-sulehri-360baa302">LinkedIn</a>
-    <a class="btn" href="https://github.com/shahwaiz000">GitHub</a>
+<nav><div class="wrap">
+  <div class="brand">Shahwaiz Bilal</div>
+  <div class="links">
+    <a href="#work">Work</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a class="cv" href="Shahwaiz-Bilal-CV.pdf" download>Download CV</a>
   </div>
-  <dl class="facts">
-    <div><dt>Based in</dt><dd>Riyadh, Saudi Arabia</dd></div>
-    <div><dt>Day to day</dt><dd>COD reconciliation, KPI reports, Power BI</dd></div>
-    <div><dt>Looking for</dt><dd>Data, finance ops or business analyst roles</dd></div>
-  </dl>
-</header>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="tag">AI Automation Specialist · Riyadh, Saudi Arabia</div>
+  <h1>I build AI systems that take<br><span>repetitive work</span> off people's desks.</h1>
+  <p class="lead">I work in finance at iMile, where I settle 2,000 to 3,000 cash-on-delivery orders every day. Doing the same manual work every day is what got me into automation. Now I turn slow, manual processes into systems that run on their own.</p>
+  <div class="btns">
+    <a class="btn primary" href="#work">See my work</a>
+    <a class="btn" href="Shahwaiz-Bilal-CV.pdf" download>Download CV</a>
+    <a class="btn" href="https://www.linkedin.com/in/shahwaiz-bilal-360baa302" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/shahwaiz000" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <div class="facts">
+    <div><b>3</b><span>AI automation projects</span></div>
+    <div><b>1 minute</b><span>for 50 station salary emails</span></div>
+    <div><b>English + Arabic</b><span>AI answers on Telegram</span></div>
+  </div>
+</div></header>
 
 <section id="work"><div class="wrap">
-  <div class="kicker">Projects</div>
-  <h2>What I've built</h2>
-  <p class="sub">The CODesk and AutoFlow Studio screenshots use made-up demo data. No real company figures from my job appear anywhere on this site or in the code.</p>
+  <div class="eyebrow">Featured project</div>
+  <h2>PayDesk: AI payroll automation</h2>
+  <p class="sub">Built from a real problem at my own desk.</p>
 
-  <article class="project">
-    <div class="hero-shot"><img src="img/codesk-overview.jpg" alt="CODesk overview screen: cash collected, card payments, money not yet in the bank, and the list of stations that need a call" loading="lazy"></div>
-    <div class="body">
-      <span class="tag">Web app</span><span class="tag">AI</span>
-      <h3>CODesk</h3>
-      <p>A cash desk for a cashier supervisor who looks after many stations. Every morning it shows which station's cash is short or late, so the supervisor knows who to call before opening a single spreadsheet.</p>
-      <div class="cols">
-        <div><h4>The problem</h4><ul>
-          <li>Cash, card payments, expenses and bank slips sit in different files and emails</li>
-          <li>A short deposit is easy to miss and gets forgotten the next day</li>
-          <li>Checking 25 stations by hand takes most of the morning</li>
-        </ul></div>
-        <div><h4>What it does</h4><ul>
-          <li>One screen per station and day, then a sign-off when it's checked</li>
-          <li>Short deposits carry forward to the next day until they're paid</li>
-          <li>Compares the card machine total with the system total</li>
-          <li>AI reads photos of bank slips and card machine receipts (demo data only)</li>
-          <li>Cashier scorecard, follow-ups, daily and month-end PDF reports</li>
-        </ul></div>
+  <div class="feature">
+    <p class="quote">"Why was my salary cut?" Drivers kept asking me this, and I had no answer, because I handle cash, not payroll. So I built a system that answers them.</p>
+    <div class="shot"><img src="img/paydesk-dashboard.jpg" alt="PayDesk dashboard showing the October payroll, the AI assistant chat in English and Arabic, and the three automations"></div>
+
+    <div class="three">
+      <div class="card"><div class="num">01</div><h4>Station salary emails</h4><p>When the month is approved, all 50 stations get their salary email with an Excel sheet, in English and Arabic. About 1 minute instead of 2 to 3 hours.</p></div>
+      <div class="card"><div class="num">02</div><h4>AI salary assistant</h4><p>Staff ask on Telegram why their salary changed. The AI explains it line by line from their own payslip, and opens a case for payroll if something looks wrong.</p></div>
+      <div class="card"><div class="num">03</div><h4>Cash confirmations</h4><p>No more paper signature sheets. After each cash payment, the person confirms on Telegram. If the amount is wrong, finance gets an alert within minutes.</p></div>
+    </div>
+
+    <div class="hood">
+      <div class="hood-top">
+        <div>
+          <div class="eyebrow" style="margin:0 0 4px">Under the hood</div>
+          <h4 class="hood-title">The automation behind PayDesk</h4>
+          <div class="stats"><div><b>4</b>n8n workflows</div><div><b>57</b>automated steps</div><div><b>53</b>connections</div><div><b>5</b>apps connected</div><div><b>3 sec</b>check for new messages</div></div>
+          <p class="hood-sub">These are the real workflows behind PayDesk, drawn from the actual n8n files. Each box is one step.</p>
+        </div>
+        <div class="legend"><i style="--c:#16a34a"></i>Trigger <i style="--c:#0b57d0"></i>PayDesk API <i style="--c:#0284c7"></i>Telegram <i style="--c:#2563eb"></i>Gemini AI <i style="--c:#ea580c"></i>Code <i style="--c:#7c3aed"></i>Decision <i style="--c:#dc2626"></i>Gmail <i style="--c:#15803d"></i>Sheets</div>
       </div>
-      <div class="stack">Python · FastAPI · SQLite · React · TypeScript · Tailwind · Google Gemini · 150+ automated tests</div>
-    </div>
-    <div class="shots">
-      <figure><img src="img/codesk-daily.jpg" alt="Daily review of one station: cash, card, expenses, deposit and what is left for the next day" loading="lazy"><figcaption>Daily review of one station</figcaption></figure>
-      <figure><img src="img/codesk-performance.jpg" alt="Cashier performance: each cashier's on-time deposit score for the month" loading="lazy"><figcaption>Cashier performance for the month</figcaption></figure>
-      <figure><img src="img/codesk-receipts.jpg" alt="AI reading card machine receipt photos and checking the totals" loading="lazy"><figcaption>AI reading card machine receipts</figcaption></figure>
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="hero-shot"><img src="img/autoflow-overview.jpg" alt="AutoFlow Studio overview: match rate, exceptions to review and amount at risk" loading="lazy"></div>
-    <div class="body">
-      <span class="tag">Web app</span><span class="tag">Automation</span>
-      <h3>AutoFlow Studio</h3>
-      <p>A reconciliation tool. You give it two files, for example courier collections and bank deposits, and it hands back only the rows that don't agree, each with a reason in plain words.</p>
-      <div class="cols">
-        <div><h4>What it does</h4><ul>
-          <li>Matches COD collections to bank deposits, and POS payments to closed orders</li>
-          <li>Lists every exception: amount differs, missing, duplicate</li>
-          <li>Approve or reject each exception, with a full audit trail</li>
-        </ul></div>
-        <div><h4>Also</h4><ul>
-          <li>Excel reports with a summary, exceptions and a by-driver sheet</li>
-          <li>Scheduled runs and email alerts</li>
-          <li>Drag-and-drop workflow builder</li>
-        </ul></div>
+      <div class="tabs">
+        <button class="on" data-wf="wf-01-station-emails">1 · Station salary emails <span>12 steps</span></button>
+        <button data-wf="wf-02-telegram-salary-messages">2 · Salary messages <span>10 steps</span></button>
+        <button data-wf="wf-03-telegram-bot">3 · AI salary bot <span>21 steps</span></button>
+        <button data-wf="wf-04-cash-received">4 · Cash confirmations <span>14 steps</span></button>
       </div>
-      <div class="stack">Python · FastAPI · Pandas · React · TypeScript · React Flow · 260+ automated tests</div>
+      <div class="canvas"><img id="wfimg" src="img/wf-01-station-emails.svg" alt="n8n workflow diagram"></div>
+      <p class="hood-note">Scroll sideways to follow each flow from start to end.</p>
     </div>
-    <div class="shots">
-      <figure><img src="img/autoflow-audit.jpg" alt="Audit trail of review decisions" loading="lazy"><figcaption>Audit trail of every decision</figcaption></figure>
-    </div>
-  </article>
 
-  <article class="project">
-    <div class="plain">
-      <span class="tag">Power BI</span><span class="tag">Reporting</span>
-      <h3>Sales &amp; KPI dashboards</h3>
-      <p>Power BI reports that answer the questions a manager actually asks: where the money comes from, which cities and branches lead, how sales move over time, and whether growth comes from new customers or renewals. Built with Power Query for cleaning and DAX for the measures.</p>
-      <p class="note">Screenshots aren't shown because these dashboards use real business data. I'm happy to walk through them in an interview.</p>
-      <div class="stack">Power BI · Power Query · DAX · Excel</div>
+    <div class="chips"><span>n8n</span><span>Gemini AI</span><span>Telegram Bot</span><span>Gmail</span><span>Google Sheets</span><span>Python</span><span>React</span></div>
+    <div class="btns" style="margin-top:24px">
+      <a class="btn primary" href="https://www.linkedin.com/feed/update/urn:li:activity:7528065808594341888/" target="_blank" rel="noopener">Watch the demo video</a>
+      <a class="btn" href="https://github.com/shahwaiz000/paydesk" target="_blank" rel="noopener">See it on GitHub</a>
     </div>
-  </article>
+  </div>
+
+  <div style="height:64px"></div>
+  <div class="eyebrow">More work</div>
+  <h2>Other projects</h2>
+  <p class="sub">Each one started with a task that took too long by hand.</p>
+
+  <div class="more">
+    <div class="proj">
+      <div class="pic text">🧾</div>
+      <div class="body">
+        <h3>Invoice &amp; Payment Autopilot</h3>
+        <p>AI reads supplier invoices from email, checks 15% VAT, duplicates, ZATCA QR code and PO number, sends approvals by amount, and builds a weekly payment plan.</p>
+        <div class="tools">n8n · Gemini AI · Gmail · Google Sheets</div>
+        <a class="go" href="https://github.com/shahwaiz000/invoice-autopilot" target="_blank" rel="noopener">View project →</a>
+      </div>
+    </div>
+    <div class="proj">
+      <div class="pic"><img src="img/codesk-overview.jpg" alt="CODesk overview of every station's cash"></div>
+      <div class="body">
+        <h3>CODesk: cash and COD supervision</h3>
+        <p>One screen showing every station's cash, card payments, expenses and bank deposits. AI reads bank slips and card receipts, and a daily PDF report goes to the manager.</p>
+        <div class="tools">Python · React · Gemini AI</div>
+        <a class="go" href="https://github.com/shahwaiz000/codesk" target="_blank" rel="noopener">View project →</a>
+      </div>
+    </div>
+    <div class="proj">
+      <div class="pic text">📊</div>
+      <div class="body">
+        <h3>Power BI dashboards</h3>
+        <p>Clean dashboards that answer the questions a manager actually asks: where the money comes from, which branches lead and how numbers move over time. Built on real business data, so I walk through them in interviews.</p>
+        <div class="tools">Power BI · Power Query · DAX · Excel</div>
+        <a class="go" href="#contact">Ask for a walkthrough →</a>
+      </div>
+    </div>
+  </div>
 </div></section>
 
 <section id="skills"><div class="wrap">
-  <div class="kicker">Skills</div>
-  <h2>What I bring</h2>
-  <p class="sub">Finance work first, with enough coding to automate the boring parts.</p>
+  <div class="eyebrow">Skills</div>
+  <h2>What I'm good at</h2>
+  <p class="sub">Finance work first, with the skills to automate it.</p>
   <div class="skills">
-    <div class="skill"><h3>Finance operations</h3><p>COD collection and reconciliation, POS matching, bank deposits, driver expenses and advances, month-end reporting.</p></div>
-    <div class="skill"><h3>Data &amp; reporting</h3><p>Excel, Power BI, Power Query, KPI dashboards, cleaning messy files, SQL basics.</p></div>
-    <div class="skill"><h3>Building tools</h3><p>Python, FastAPI, React, TypeScript, Git. Six semesters of software engineering, and I use AI tools to build faster.</p></div>
+    <div class="skill"><h3>AI automation</h3><p>Finding the slow, manual parts of a business and turning them into systems that run on their own.</p></div>
+    <div class="skill"><h3>Dashboards and reporting</h3><p>Clean, professional Power BI dashboards that show managers what matters at a glance, from data cleaning and modelling to DAX and the final design.</p></div>
+    <div class="skill"><h3>Finance operations</h3><p>Reconciliation, cash control, payroll and management reporting.</p></div>
+    <div class="skill"><h3>Tools</h3><p>n8n, Power Automate, Python, SQL, Power BI, Excel, Gemini API, REST APIs and webhooks, Telegram bots, Git and GitHub.</p></div>
   </div>
 </div></section>
 
-<section id="contact"><div class="wrap">
-  <div class="kicker">Contact</div>
-  <h2>Let's talk</h2>
-  <p class="sub">Open to roles in data analysis, reconciliation, finance operations and business analysis in Saudi Arabia.</p>
+<section id="experience"><div class="wrap">
+  <div class="eyebrow">Experience</div>
+  <h2>Where I work</h2>
+  <div class="job" style="margin-top:28px"><h3>Finance Executive</h3><span>Aug 2025 – Present</span></div>
+  <div class="org">iMile Delivery Services, Riyadh</div>
+  <ul>
+    <li>Settle 2,000 to 3,000 cash-on-delivery orders every day.</li>
+    <li>Reconcile cash and card payments against the delivery system and resolve differences with operations.</li>
+    <li>Build daily reports for management using Excel formulas and Power BI.</li>
+    <li>Turned the manual work in this role into automation projects of my own, such as PayDesk for payroll and CODesk for cash supervision.</li>
+  </ul>
+  <div class="job" style="margin-top:30px"><h3>Education</h3><span></span></div>
+  <ul style="margin-top:10px">
+    <li>Bachelor's in Computing (in progress), Virtual University of Pakistan, 2026 – present</li>
+    <li>Software Engineering, 6 semesters completed, Lahore Garrison University, 2020 – 2024</li>
+    <li>Certificates: Claude 101 (Anthropic), AI Fluency (Prism), Data Analyst Job Simulation (Deloitte)</li>
+  </ul>
+</div></section>
+
+<section id="contact" style="border-top:0"><div class="wrap">
   <div class="contact">
-    <a class="btn main" href="mailto:shahwaizsulehri098@gmail.com">shahwaizsulehri098@gmail.com</a>
-    <a class="btn" href="https://www.linkedin.com/in/shahwaiz-sulehri-360baa302">LinkedIn</a>
-    <a class="btn" href="https://github.com/shahwaiz000">GitHub</a>
+    <h2>Have a task that takes too long?</h2>
+    <p>I'm open to AI automation, business automation and data roles in Saudi Arabia. Send me a message and tell me what slows your team down.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:shahwaizsulehri098@gmail.com">shahwaizsulehri098@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/shahwaiz-bilal-360baa302" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="Shahwaiz-Bilal-CV.pdf" download>Download CV</a>
+    </div>
   </div>
 </div></section>
 
-<footer><div class="wrap">© 2026 Shahwaiz · Riyadh</div></footer>
+<footer>© 2026 Shahwaiz Bilal · Riyadh, Saudi Arabia</footer>
 
-<div id="zoom" role="dialog" aria-label="Enlarged screenshot"><img alt=""></div>
+<div id="zoom"><img alt=""></div>
 <script>
 const z=document.getElementById('zoom'),zi=z.querySelector('img');
-document.querySelectorAll('.shots img,.hero-shot img').forEach(i=>i.addEventListener('click',()=>{zi.src=i.src;zi.alt=i.alt;z.style.display='flex'}));
+document.querySelectorAll('.shot img,.proj .pic img').forEach(i=>i.addEventListener('click',()=>{zi.src=i.src;zi.alt=i.alt;z.style.display='flex'}));
 z.addEventListener('click',()=>{z.style.display='none'});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')z.style.display='none'});
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  document.getElementById('wfimg').src='img/'+b.dataset.wf+'.svg';
+}));
 </script>
 </body>
 </html>
