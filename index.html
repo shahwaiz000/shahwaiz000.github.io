@@ -4,286 +4,278 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shahwaiz Bilal · AI Automation Specialist</title>
-<meta name="description" content="Shahwaiz Bilal – AI Automation Specialist in Riyadh. I build AI systems that take repetitive work off people's desks.">
+<meta name="description" content="Shahwaiz Bilal – AI Automation Specialist in Riyadh. I make office work run by itself.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--ink:#111827;--text:#374151;--muted:#6b7280;--line:#e5e7eb;--soft:#f6f8fb;--blue:#0b57d0;--blue-soft:#eaf1fd}
+  :root{--bg:#0f172a;--panel:#13203a;--text:#94a3b8;--light:#e2e8f0;--white:#f8fafc;--accent:#5eead4;--accent-bg:rgba(45,212,191,.1);--line:#1e293b}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--text);font-size:17px;line-height:1.6;background:#fff}
-  a{color:var(--blue);text-decoration:none}
-  a:hover{text-decoration:underline}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-  nav{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-  nav .brand{font-weight:700;color:var(--ink)}
-  nav .links a{color:var(--text);margin-left:26px;font-size:15px;font-weight:500}
-  nav .links a.cv{color:#fff;background:var(--blue);padding:8px 14px;border-radius:8px}
-  nav .links a:hover{text-decoration:none;color:var(--blue)}
-  nav .links a.cv:hover{color:#fff;background:#0947ad}
-  .hero{padding:90px 0 70px}
-  .tag{display:inline-block;font-size:13px;font-weight:600;color:var(--blue);background:var(--blue-soft);padding:5px 12px;border-radius:99px;margin-bottom:20px}
-  h1{font-size:54px;line-height:1.08;letter-spacing:-1.5px;color:var(--ink);margin:0 0 20px;font-weight:800}
-  h1 span{color:var(--blue)}
-  .lead{font-size:20px;max-width:640px;margin:0 0 32px;color:var(--text)}
-  .btns{display:flex;gap:12px;flex-wrap:wrap}
-  .btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--ink);background:#fff}
-  .btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
-  .btn:hover{text-decoration:none;border-color:var(--blue)}
-  .btn.primary:hover{background:#0947ad}
-  .facts{display:flex;gap:44px;flex-wrap:wrap;margin-top:56px;padding-top:28px;border-top:1px solid var(--line)}
-  .facts b{display:block;font-size:28px;color:var(--ink);letter-spacing:-.5px}
-  .facts span{font-size:14px;color:var(--muted)}
-  section{padding:80px 0;border-top:1px solid var(--line)}
-  .eyebrow{font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
-  h2{font-size:36px;letter-spacing:-.8px;color:var(--ink);margin:0 0 14px;line-height:1.2}
-  .sub{max-width:660px;color:var(--text);margin:0 0 40px}
-  .feature{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:36px}
-  .feature .head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:24px}
-  .feature h3{font-size:28px;margin:0;color:var(--ink);letter-spacing:-.5px}
-  .feature .head p{margin:6px 0 0;color:var(--muted)}
-  .quote{font-size:19px;color:var(--ink);border-left:3px solid var(--blue);padding:4px 0 4px 18px;margin:0 0 28px;max-width:760px}
-  .shot{border-radius:12px;border:1px solid var(--line);overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(17,24,39,.08);cursor:zoom-in}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(600px circle at var(--mx,20%) var(--my,10%),rgba(29,78,216,.13),transparent 80%);z-index:0}
+  a{color:var(--light);text-decoration:none}
+  a:hover{color:var(--accent)}
+  b,strong{color:var(--light);font-weight:600}
+  .page{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 48px;display:flex;gap:64px}
+  /* left side */
+  .side{position:sticky;top:0;height:100vh;width:44%;padding:96px 0;display:flex;flex-direction:column;justify-content:space-between}
+  .side h1{font-size:48px;line-height:1.1;color:var(--white);margin:0;letter-spacing:-1px;font-weight:700}
+  .side h2{font-size:20px;color:var(--light);font-weight:500;margin:12px 0 0}
+  .side .tagline{max-width:340px;margin:16px 0 0}
+  .menu{margin-top:56px;list-style:none;padding:0}
+  .menu li{margin:0}
+  .menu a{display:flex;align-items:center;gap:16px;padding:10px 0;font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#64748b}
+  .menu a::before{content:"";height:1px;width:32px;background:#475569;transition:all .2s}
+  .menu a:hover,.menu a.on{color:var(--white)}
+  .menu a:hover::before,.menu a.on::before{width:64px;background:var(--white)}
+  .cvbtn{display:inline-block;margin-top:28px;border:1px solid var(--accent);color:var(--accent);padding:10px 18px;border-radius:6px;font-size:14px;font-weight:600}
+  .cvbtn:hover{background:var(--accent-bg)}
+  .social{display:flex;gap:20px;align-items:center}
+  .social a{color:#94a3b8}
+  .social a:hover{color:var(--white)}
+  .social svg{width:24px;height:24px;display:block}
+  /* right side */
+  main{width:56%;padding:96px 0}
+  section{margin-bottom:120px;scroll-margin-top:60px}
+  .label{display:none;font-size:13px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--white);margin-bottom:24px}
+  p{margin:0 0 16px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+  .card{background:rgba(30,41,59,.5);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .card h3{margin:0 0 6px;font-size:15.5px;color:var(--light)}
+  .card p{margin:0;font-size:14.5px}
+  .item{position:relative;display:grid;grid-template-columns:120px 1fr;gap:20px;padding:20px;margin:0 -20px;border-radius:10px;transition:background .2s}
+  .item:hover{background:rgba(30,41,59,.5);box-shadow:inset 0 1px 0 rgba(148,163,184,.1)}
+  .item .date{font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#64748b;padding-top:3px}
+  .item h3{margin:0 0 8px;font-size:16px;color:var(--light);font-weight:600}
+  .item h3 a:hover{color:var(--accent)}
+  .item h3 .arrow{display:inline-block;transition:transform .2s;margin-left:4px}
+  .item:hover h3 .arrow{transform:translate(3px,-3px)}
+  .item p{font-size:14.5px;margin:0 0 10px}
+  .item .thumb{width:120px;border-radius:6px;border:2px solid #1e293b;overflow:hidden;cursor:zoom-in}
+  .item .thumb img{display:block;width:100%}
+  .item .icon{width:120px;height:68px;border-radius:6px;border:2px solid #1e293b;display:flex;align-items:center;justify-content:center;font-size:28px;background:#13203a}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .chips span{font-size:12px;font-weight:500;color:var(--accent);background:var(--accent-bg);border-radius:99px;padding:4px 12px}
+  /* featured */
+  .feature{border:1px solid var(--line);border-radius:14px;background:rgba(30,41,59,.35);padding:26px;margin:0 0 24px}
+  .feature .kicker{font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+  .feature h3{font-size:24px;margin:0 0 18px;color:var(--white);letter-spacing:-.4px}
+  .pst{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+  .pst>div{background:rgba(15,23,42,.6);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .pst .pl{font-size:11.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+  .pst p{margin:0;font-size:14px}
+  .shot{border-radius:10px;overflow:hidden;border:1px solid #334155;cursor:zoom-in}
   .shot img{display:block;width:100%}
-  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
-  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
-  .card .num{font-size:13px;font-weight:700;color:var(--blue)}
-  .card h4{margin:6px 0 8px;font-size:18px;color:var(--ink)}
-  .card p{margin:0;font-size:15.5px}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-  .chips span{font-size:13px;font-weight:500;background:#fff;border:1px solid var(--line);border-radius:99px;padding:4px 12px;color:var(--text)}
-  .more{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .proj{border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
-  .proj .pic{height:170px;background:var(--soft);border-bottom:1px solid var(--line);overflow:hidden;cursor:zoom-in}
-  .proj .pic img{width:100%;height:100%;object-fit:cover;object-position:top left}
-  .proj .pic.text{display:flex;align-items:center;justify-content:center;font-size:44px;cursor:default}
-  .proj .body{padding:22px;display:flex;flex-direction:column;flex:1}
-  .proj h3{margin:0 0 8px;font-size:19px;color:var(--ink)}
-  .proj p{margin:0 0 16px;font-size:15.5px;flex:1}
-  .proj .tools{font-size:13px;color:var(--muted);margin-bottom:14px}
-  .proj a.go{font-weight:600;font-size:15px}
-  .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-  .skill{border:1px solid var(--line);border-radius:14px;padding:24px}
-  .skill h3{margin:0 0 6px;font-size:18px;color:var(--ink)}
-  .skill p{margin:0;font-size:15.5px}
-  .job{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-  .job h3{margin:0;font-size:19px;color:var(--ink)}
-  .job span{color:var(--muted);font-size:15px}
-  .org{color:var(--muted);margin:2px 0 12px}
-  ul{margin:0;padding-left:20px}li{margin:6px 0}
-  .contact{background:var(--ink);color:#d1d5db;border-radius:20px;padding:56px 44px;text-align:center}
-  .contact h2{color:#fff}
-  .contact p{max-width:560px;margin:0 auto 28px}
-  .contact .btn{background:transparent;color:#fff;border-color:#4b5563}
-  .contact .btn.primary{background:var(--blue);border-color:var(--blue)}
-  .contact .btns{justify-content:center}
-  footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:14px}
-  .pst{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:26px}
-  .pst>div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
-  .pst .pl{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
-  .pst p{margin:0;font-size:15.5px}
-  .ic{font-size:26px;margin-bottom:8px}
-  .chips.big span{font-size:15px;padding:7px 15px}
-  .proj p b{color:var(--ink)}
-  .hood{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
-  .hood-top{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
-  .hood-title{margin:0;font-size:20px;color:var(--ink);letter-spacing:-.3px}
-  .stats{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 6px}.stats div{border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:13px;color:var(--muted);background:var(--soft)}.stats b{display:block;font-size:22px;color:var(--ink);letter-spacing:-.4px}
-  .hood-sub{margin:4px 0 0;font-size:15px;color:var(--muted)}
-  .legend{font-size:12.5px;color:var(--muted);line-height:2;margin-left:-10px}
-  .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--c);margin:0 5px 0 10px;vertical-align:-1px}
-  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-  .tabs button{font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line);background:#fff;color:var(--text);border-radius:99px;padding:7px 14px;cursor:pointer}
-  .tabs button span{font-weight:500;color:var(--muted);margin-left:4px}
-  .tabs button.on{background:var(--blue);border-color:var(--blue);color:#fff}
-  .tabs button.on span{color:#cfe0ff}
-  .canvas{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fafbfc}
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+  .three div{border-top:2px solid var(--accent);padding-top:10px}
+  .three h4{margin:0 0 4px;color:var(--light);font-size:14.5px}
+  .three p{margin:0;font-size:13.5px}
+  .hood{margin-top:24px;border-top:1px solid var(--line);padding-top:22px}
+  .hood h4{margin:0 0 4px;color:var(--white);font-size:17px}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+  .stats div{border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:12.5px;background:rgba(15,23,42,.6)}
+  .stats b{display:block;font-size:20px;color:var(--white)}
+  .legend{font-size:12px;line-height:2;margin:6px 0 12px}
+  .legend i{display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--c);margin:0 5px 0 10px}
+  .legend i:first-child{margin-left:0}
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+  .tabs button{font:inherit;font-size:13px;font-weight:600;cursor:pointer;border:1px solid #334155;background:transparent;color:var(--text);border-radius:99px;padding:6px 13px}
+  .tabs button.on{border-color:var(--accent);color:var(--accent);background:var(--accent-bg)}
+  .canvas{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#0b1324}
   .canvas img{display:block;max-width:none}
-  .hood-note{margin:8px 0 0;font-size:13px;color:var(--muted)}
-  #zoom{position:fixed;inset:0;background:rgba(17,24,39,.85);display:none;align-items:center;justify-content:center;z-index:50;padding:30px;cursor:zoom-out}
-  #zoom img{max-width:100%;max-height:100%;border-radius:10px}
-  @media(max-width:860px){
-    h1{font-size:38px}.lead{font-size:18px}
-    .three,.more,.skills,.pst{grid-template-columns:1fr}
-    .feature{padding:22px}
-    nav .links a:not(.cv){display:none}
-    section{padding:60px 0}.hero{padding:60px 0 50px}
-    .facts{gap:28px}
+  .note{font-size:12.5px;color:#64748b;margin-top:8px}
+  .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+  .btn{display:inline-block;font-size:14px;font-weight:600;padding:9px 16px;border-radius:6px;border:1px solid #334155;color:var(--light)}
+  .btn.primary{border-color:var(--accent);color:var(--accent)}
+  .btn:hover{background:var(--accent-bg);color:var(--accent)}
+  .tools{display:flex;flex-wrap:wrap;gap:8px}
+  .tools span{font-size:13px;color:var(--accent);background:var(--accent-bg);border-radius:99px;padding:5px 13px}
+  .contact h3{font-size:28px;color:var(--white);margin:0 0 10px;letter-spacing:-.5px}
+  footer{font-size:13px;color:#475569;max-width:420px}
+  #zoom{position:fixed;inset:0;background:rgba(2,6,23,.9);display:none;align-items:center;justify-content:center;z-index:50;padding:30px;cursor:zoom-out}
+  #zoom img{max-width:100%;max-height:100%;border-radius:8px}
+  @media(max-width:1020px){
+    .page{display:block;padding:0 24px}
+    .side{position:static;height:auto;width:auto;padding:64px 0 24px}
+    .menu{display:none}
+    .social{margin-top:28px}
+    main{width:auto;padding:24px 0 64px}
+    .label{display:block;position:sticky;top:0;background:rgba(15,23,42,.9);backdrop-filter:blur(8px);margin:0 -24px 20px;padding:16px 24px}
+    .side h1{font-size:40px}
+  }
+  @media(max-width:640px){
+    .cards,.pst,.three{grid-template-columns:1fr}
+    .item{grid-template-columns:1fr}
+    .item .thumb,.item .icon{order:2}
   }
 </style>
 </head>
 <body>
+<div class="page">
 
-<nav><div class="wrap">
-  <div class="brand">Shahwaiz Bilal</div>
-  <div class="links">
-    <a href="#can">What I can build</a><a href="#work">What I built</a><a href="#experience">About me</a><a href="#contact">Contact</a>
-    <a class="cv" href="Shahwaiz-Bilal-CV.pdf" download>Download CV</a>
+<header class="side">
+  <div>
+    <h1>Shahwaiz Bilal</h1>
+    <h2>AI Automation Specialist</h2>
+    <p class="tagline">I make office work run by itself: emails, reports, approvals and answers that happen without anyone pressing a button.</p>
+    <ul class="menu">
+      <li><a href="#about" class="on">About</a></li>
+      <li><a href="#build">What I can build</a></li>
+      <li><a href="#projects">What I built</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="cvbtn" href="Shahwaiz-Bilal-CV.pdf" download>Download CV ↓</a>
   </div>
-</div></nav>
-
-<header class="hero"><div class="wrap">
-  <div class="tag">AI Automation Specialist · Riyadh, Saudi Arabia</div>
-  <h1>Hi, I'm Shahwaiz.<br>I make <span>office work run by itself.</span></h1>
-  <p class="lead">I work in finance at iMile, a delivery company in Riyadh. Every day I saw people doing the same work by hand: sending emails, answering the same questions, checking numbers. So I started building AI tools that do this work automatically.</p>
-  <div class="btns">
-    <a class="btn primary" href="#work">See what I built</a>
-    <a class="btn" href="Shahwaiz-Bilal-CV.pdf" download>Download CV</a>
-    <a class="btn" href="https://www.linkedin.com/in/shahwaiz-bilal-360baa302" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="https://github.com/shahwaiz000" target="_blank" rel="noopener">GitHub</a>
+  <div class="social">
+    <a href="https://github.com/shahwaiz000" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.2-3.1-.1-.4-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a>
+    <a href="https://www.linkedin.com/in/shahwaiz-bilal-360baa302" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
+    <a href="mailto:shahwaizsulehri098@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
   </div>
-  <div class="facts">
-    <div><b>3</b><span>working automation projects</span></div>
-    <div><b>3 hours → 1 minute</b><span>for 50 salary emails</span></div>
-    <div><b>English + Arabic</b><span>AI that answers staff questions</span></div>
-  </div>
-</div></header>
+</header>
 
-<section id="can"><div class="wrap">
-  <div class="eyebrow">What I can build for you</div>
-  <h2>If a task is boring and repeated, I can automate it.</h2>
-  <p class="sub">Here is the kind of work I take off a team's desk.</p>
-  <div class="skills">
-    <div class="skill"><div class="ic">✉️</div><h3>Emails and reports that send themselves</h3><p>The right report goes to the right people at the right time, without anyone pressing a button.</p></div>
-    <div class="skill"><div class="ic">💬</div><h3>AI assistants for staff or customers</h3><p>A chat assistant on Telegram or WhatsApp that answers questions from your own company data, in English and Arabic.</p></div>
-    <div class="skill"><div class="ic">📄</div><h3>AI that reads documents</h3><p>Invoices, receipts and bank slips are read by AI, checked for mistakes, and entered into your system for you.</p></div>
-    <div class="skill"><div class="ic">📊</div><h3>Clear dashboards for managers</h3><p>Power BI dashboards that show the numbers a manager needs in one look, updated automatically.</p></div>
-  </div>
-</div></section>
+<main>
+  <section id="about">
+    <div class="label">About</div>
+    <p>I work in finance at <b>iMile</b>, a delivery company in Riyadh, where I settle <b>2,000 to 3,000 cash-on-delivery orders every day</b> and turn the numbers into reports for management.</p>
+    <p>Every day I saw people doing the same work by hand: sending the same emails, answering the same questions, checking the same numbers. So I started building <b>AI tools that do this work automatically</b>, so people can spend their time on work that actually needs a person.</p>
+    <p>My biggest project, <a href="#projects">PayDesk</a>, turned a 3-hour payroll task into <b>about 1 minute</b>, and answers staff salary questions with AI in English and Arabic.</p>
+  </section>
 
-<section id="work"><div class="wrap">
-  <div class="eyebrow">What I have already built</div>
-  <h2>PayDesk: payroll that runs itself</h2>
-  <p class="sub">My biggest project, built from a real problem at my own desk.</p>
-
-  <div class="feature">
-    <div class="pst">
-      <div><div class="pl">The problem</div><p>Drivers kept asking me <b>"Why was my salary cut?"</b> I had no answer, because I handle cash, not payroll. Salary emails to 50 stations also took 2 to 3 hours by hand.</p></div>
-      <div><div class="pl">What I built</div><p>A system where the computer does the payroll work: it sends the emails, explains every salary with AI, and checks that cash was really paid.</p></div>
-      <div><div class="pl">The result</div><p><b>2 to 3 hours of work now takes about 1 minute.</b> Drivers get answers in seconds, and paper signature sheets are no longer needed.</p></div>
+  <section id="build">
+    <div class="label">What I can build</div>
+    <p><b>If a task is boring and repeated, I can automate it.</b> Here is the kind of work I take off a team's desk:</p>
+    <div class="cards">
+      <div class="card"><h3>✉️ Emails and reports that send themselves</h3><p>The right report goes to the right people at the right time, without anyone pressing a button.</p></div>
+      <div class="card"><h3>💬 AI assistants for staff or customers</h3><p>A chat assistant on Telegram or WhatsApp that answers questions from your own company data, in English and Arabic.</p></div>
+      <div class="card"><h3>📄 AI that reads documents</h3><p>Invoices, receipts and bank slips are read by AI, checked for mistakes, and entered into your system for you.</p></div>
+      <div class="card"><h3>📊 Clear dashboards for managers</h3><p>Power BI dashboards that show the numbers a manager needs in one look.</p></div>
     </div>
-    <div class="shot"><img src="img/paydesk-dashboard.jpg" alt="PayDesk dashboard showing the October payroll, the AI assistant chat in English and Arabic, and the three automations"></div>
+  </section>
 
-    <div class="three">
-      <div class="card"><div class="num">01</div><h4>Station salary emails</h4><p>When the month is approved, all 50 stations get their salary email with an Excel sheet, in English and Arabic. About 1 minute instead of 2 to 3 hours.</p></div>
-      <div class="card"><div class="num">02</div><h4>AI salary assistant</h4><p>Staff ask on Telegram why their salary changed. The AI explains it line by line from their own payslip, and opens a case for payroll if something looks wrong.</p></div>
-      <div class="card"><div class="num">03</div><h4>Cash confirmations</h4><p>No more paper signature sheets. After each cash payment, the person confirms on Telegram. If the amount is wrong, finance gets an alert within minutes.</p></div>
-    </div>
+  <section id="projects">
+    <div class="label">What I built</div>
 
-    <div class="hood">
-      <div class="hood-top">
-        <div>
-          <div class="eyebrow" style="margin:0 0 4px">Behind the scenes</div>
-          <h4 class="hood-title">How PayDesk works on its own</h4>
-          <div class="stats"><div><b>4</b>n8n workflows</div><div><b>57</b>automated steps</div><div><b>53</b>connections</div><div><b>5</b>apps connected</div><div><b>3 sec</b>check for new messages</div></div>
-          <p class="hood-sub">Each box below is one step the computer does by itself, and the arrows show the order. For example: the manager approves the month → the system gets the salary list → AI writes the Arabic text → 50 emails go out → everything is logged. These are my real workflows, built in n8n.</p>
+    <div class="feature">
+      <div class="kicker">Featured project</div>
+      <h3>PayDesk: payroll that runs itself</h3>
+      <div class="pst">
+        <div><div class="pl">The problem</div><p>Drivers kept asking me <b>"Why was my salary cut?"</b> and I had no answer. Salary emails to 50 stations took 2 to 3 hours by hand.</p></div>
+        <div><div class="pl">What I built</div><p>A system where the computer does the payroll work: it sends the emails, explains every salary with AI, and checks cash was really paid.</p></div>
+        <div><div class="pl">The result</div><p><b>3 hours of work now takes about 1 minute.</b> Staff get answers in seconds, and paper signature sheets are gone.</p></div>
+      </div>
+      <div class="shot"><img src="img/paydesk-dashboard.jpg" alt="PayDesk dashboard with the AI assistant answering salary questions in English and Arabic"></div>
+      <div class="three">
+        <div><h4>Station salary emails</h4><p>All 50 stations get their salary email with Excel, in English and Arabic, in about a minute.</p></div>
+        <div><h4>AI salary assistant</h4><p>Staff ask on Telegram why their salary changed, and AI explains it line by line.</p></div>
+        <div><h4>Cash confirmations</h4><p>Each cash payment is confirmed on Telegram. A wrong amount alerts finance in minutes.</p></div>
+      </div>
+
+      <div class="hood">
+        <h4>How PayDesk works on its own</h4>
+        <p style="font-size:14px;margin:0">Each box is one step the computer does by itself, and the arrows show the order. For example: the manager approves the month → the system gets the salary list → AI writes the Arabic text → 50 emails go out → everything is logged.</p>
+        <div class="stats"><div><b>4</b>n8n workflows</div><div><b>57</b>automated steps</div><div><b>53</b>connections</div><div><b>5</b>apps connected</div><div><b>3 sec</b>new-message check</div></div>
+        <div class="legend"><i style="--c:#16a34a"></i>Trigger <i style="--c:#0b57d0"></i>PayDesk <i style="--c:#0284c7"></i>Telegram <i style="--c:#2563eb"></i>Gemini AI <i style="--c:#ea580c"></i>Code <i style="--c:#7c3aed"></i>Decision <i style="--c:#dc2626"></i>Gmail <i style="--c:#15803d"></i>Sheets</div>
+        <div class="tabs">
+          <button class="on" data-wf="wf-01-station-emails">1 · Salary emails · 12 steps</button>
+          <button data-wf="wf-02-telegram-salary-messages">2 · Salary messages · 10 steps</button>
+          <button data-wf="wf-03-telegram-bot">3 · AI salary bot · 21 steps</button>
+          <button data-wf="wf-04-cash-received">4 · Cash confirmations · 14 steps</button>
         </div>
-        <div class="legend"><i style="--c:#16a34a"></i>Trigger <i style="--c:#0b57d0"></i>PayDesk API <i style="--c:#0284c7"></i>Telegram <i style="--c:#2563eb"></i>Gemini AI <i style="--c:#ea580c"></i>Code <i style="--c:#7c3aed"></i>Decision <i style="--c:#dc2626"></i>Gmail <i style="--c:#15803d"></i>Sheets</div>
+        <div class="canvas"><img id="wfimg" src="img/wf-01-station-emails-dark.svg" alt="PayDesk n8n workflow"></div>
+        <div class="note">Scroll sideways to follow each flow from start to end.</div>
       </div>
-      <div class="tabs">
-        <button class="on" data-wf="wf-01-station-emails">1 · Station salary emails <span>12 steps</span></button>
-        <button data-wf="wf-02-telegram-salary-messages">2 · Salary messages <span>10 steps</span></button>
-        <button data-wf="wf-03-telegram-bot">3 · AI salary bot <span>21 steps</span></button>
-        <button data-wf="wf-04-cash-received">4 · Cash confirmations <span>14 steps</span></button>
+      <div class="chips"><span>n8n</span><span>Gemini AI</span><span>Telegram</span><span>Gmail</span><span>Google Sheets</span><span>Python</span><span>React</span></div>
+      <div class="btnrow">
+        <a class="btn primary" href="https://www.linkedin.com/feed/update/urn:li:activity:7528065808594341888/" target="_blank" rel="noopener">▶ Watch the demo video</a>
+        <a class="btn" href="https://github.com/shahwaiz000/paydesk" target="_blank" rel="noopener">See it on GitHub ↗</a>
       </div>
-      <div class="canvas"><img id="wfimg" src="img/wf-01-station-emails.svg" alt="n8n workflow diagram"></div>
-      <p class="hood-note">Scroll sideways to follow each flow from start to end.</p>
     </div>
 
-    <div class="chips"><span>n8n</span><span>Gemini AI</span><span>Telegram Bot</span><span>Gmail</span><span>Google Sheets</span><span>Python</span><span>React</span></div>
-    <div class="btns" style="margin-top:24px">
-      <a class="btn primary" href="https://www.linkedin.com/feed/update/urn:li:activity:7528065808594341888/" target="_blank" rel="noopener">Watch the demo video</a>
-      <a class="btn" href="https://github.com/shahwaiz000/paydesk" target="_blank" rel="noopener">See it on GitHub</a>
-    </div>
-  </div>
-
-  <div style="height:64px"></div>
-  <div class="eyebrow">More work</div>
-  <h2>My other projects</h2>
-  <p class="sub">Each one started with a task that took too long by hand.</p>
-
-  <div class="more">
-    <div class="proj">
-      <div class="pic text">🧾</div>
-      <div class="body">
-        <h3>Invoice &amp; Payment Autopilot</h3>
-        <p><b>Problem:</b> checking supplier invoices by hand is slow and mistakes are easy to miss.<br><b>What it does:</b> AI reads each invoice from email, checks VAT, duplicates and the ZATCA QR code, asks the right manager to approve, and plans the weekly payments.</p>
-        <div class="tools">n8n · Gemini AI · Gmail · Google Sheets</div>
-        <a class="go" href="https://github.com/shahwaiz000/invoice-autopilot" target="_blank" rel="noopener">View project →</a>
+    <div class="item">
+      <div class="icon">🧾</div>
+      <div>
+        <h3><a href="https://github.com/shahwaiz000/invoice-autopilot" target="_blank" rel="noopener">Invoice &amp; Payment Autopilot <span class="arrow">↗</span></a></h3>
+        <p><b>Problem:</b> checking supplier invoices by hand is slow and mistakes are easy to miss. <b>What it does:</b> AI reads each invoice from email, checks VAT, duplicates and the ZATCA QR code, asks the right manager to approve, and plans the weekly payments.</p>
+        <div class="chips"><span>n8n</span><span>Gemini AI</span><span>Gmail</span><span>Google Sheets</span></div>
       </div>
     </div>
-    <div class="proj">
-      <div class="pic"><img src="img/codesk-overview.jpg" alt="CODesk overview of every station's cash"></div>
-      <div class="body">
-        <h3>CODesk: cash and COD supervision</h3>
-        <p><b>Problem:</b> a supervisor has to check cash from many stations in many files.<br><b>What it does:</b> one screen shows every station's cash and deposits, AI reads bank slips and receipts, and a daily report goes to the manager.</p>
-        <div class="tools">Python · React · Gemini AI</div>
-        <a class="go" href="https://github.com/shahwaiz000/codesk" target="_blank" rel="noopener">View project →</a>
+    <div class="item">
+      <div class="thumb"><img src="img/codesk-overview.jpg" alt="CODesk overview"></div>
+      <div>
+        <h3><a href="https://github.com/shahwaiz000/codesk" target="_blank" rel="noopener">CODesk: cash and COD supervision <span class="arrow">↗</span></a></h3>
+        <p><b>Problem:</b> a supervisor has to check cash from many stations in many files. <b>What it does:</b> one screen shows every station's cash and deposits, AI reads bank slips and receipts, and a daily report goes to the manager.</p>
+        <div class="chips"><span>Python</span><span>React</span><span>Gemini AI</span></div>
       </div>
     </div>
-    <div class="proj">
-      <div class="pic text">📊</div>
-      <div class="body">
+    <div class="item">
+      <div class="icon">📊</div>
+      <div>
         <h3>Power BI dashboards</h3>
-        <p><b>Problem:</b> managers get long spreadsheets but need quick answers.<br><b>What it does:</b> clean dashboards show where the money comes from, which branches lead and how numbers change. They use real company data, so I show them in interviews.</p>
-        <div class="tools">Power BI · Power Query · DAX · Excel</div>
-        <a class="go" href="#contact">Ask for a walkthrough →</a>
+        <p><b>Problem:</b> managers get long spreadsheets but need quick answers. <b>What it does:</b> clean dashboards show where the money comes from, which branches lead and how numbers change. They use real company data, so I show them in interviews.</p>
+        <div class="chips"><span>Power BI</span><span>Power Query</span><span>DAX</span><span>Excel</span></div>
       </div>
     </div>
-  </div>
-</div></section>
+  </section>
 
-<section id="skills"><div class="wrap">
-  <div class="eyebrow">Tools I use</div>
-  <h2>The tools behind my work</h2>
-  <div class="chips big"><span>n8n</span><span>Power Automate</span><span>Python</span><span>SQL</span><span>Power BI</span><span>Excel</span><span>Gemini AI</span><span>ChatGPT and Claude</span><span>Telegram bots</span><span>Gmail and Google Sheets</span><span>REST APIs and webhooks</span><span>Git and GitHub</span></div>
-</div></section>
-
-<section id="experience"><div class="wrap">
-  <div class="eyebrow">About me</div>
-  <h2>My work and studies</h2>
-  <div class="job" style="margin-top:28px"><h3>Finance Executive</h3><span>Aug 2025 – Present</span></div>
-  <div class="org">iMile Delivery Services, Riyadh</div>
-  <ul>
-    <li>Settle 2,000 to 3,000 cash-on-delivery orders every day.</li>
-    <li>Reconcile cash and card payments against the delivery system and resolve differences with operations.</li>
-    <li>Build daily reports for management using Excel formulas and Power BI.</li>
-    <li>Turned the manual work in this role into automation projects of my own, such as PayDesk for payroll and CODesk for cash supervision.</li>
-  </ul>
-  <div class="job" style="margin-top:30px"><h3>Education</h3><span></span></div>
-  <ul style="margin-top:10px">
-    <li>Bachelor's in Computing (in progress), Virtual University of Pakistan, 2026 – present</li>
-    <li>Software Engineering, 6 semesters completed, Lahore Garrison University, 2020 – 2024</li>
-    <li>Certificates: Claude 101 (Anthropic), AI Fluency (Prism), Data Analyst Job Simulation (Deloitte)</li>
-  </ul>
-</div></section>
-
-<section id="contact" style="border-top:0"><div class="wrap">
-  <div class="contact">
-    <h2>Have a task that takes too long?</h2>
-    <p>I'm open to AI automation, business automation and data roles in Saudi Arabia. Send me a message and tell me what slows your team down.</p>
-    <div class="btns">
-      <a class="btn primary" href="mailto:shahwaizsulehri098@gmail.com">shahwaizsulehri098@gmail.com</a>
-      <a class="btn" href="https://www.linkedin.com/in/shahwaiz-bilal-360baa302" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="Shahwaiz-Bilal-CV.pdf" download>Download CV</a>
+  <section id="experience">
+    <div class="label">Experience</div>
+    <div class="item">
+      <div class="date">Aug 2025 — Now</div>
+      <div>
+        <h3>Finance Executive · iMile Delivery Services</h3>
+        <p>Settle 2,000 to 3,000 cash-on-delivery orders every day, reconcile cash and card payments with the delivery system, and build daily reports for management with Excel and Power BI. Turned the manual work in this role into my own automation projects, PayDesk and CODesk.</p>
+        <div class="chips"><span>Reconciliation</span><span>Cash control</span><span>Payroll</span><span>Reporting</span></div>
+      </div>
     </div>
-  </div>
-</div></section>
+    <div class="item">
+      <div class="date">2024</div>
+      <div>
+        <h3>Game Development Intern · Smartnnovative Labs, Lahore</h3>
+        <p>My first hands-on coding experience, working in a small development team.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="date">Education</div>
+      <div>
+        <h3>Bachelor's in Computing (in progress) · Virtual University of Pakistan</h3>
+        <p>Before this: Software Engineering at Lahore Garrison University, 2020 to 2024 (6 semesters completed). Certificates: Claude 101 (Anthropic), AI Fluency (Prism), Data Analyst Job Simulation (Deloitte).</p>
+      </div>
+    </div>
+    <p style="margin-top:28px"><b>Tools I use</b></p>
+    <div class="tools"><span>n8n</span><span>Power Automate</span><span>Python</span><span>SQL</span><span>Power BI</span><span>Excel</span><span>Gemini AI</span><span>ChatGPT and Claude</span><span>Telegram bots</span><span>Gmail and Google Sheets</span><span>REST APIs and webhooks</span><span>Git and GitHub</span></div>
+    <p style="margin-top:28px"><a href="Shahwaiz-Bilal-CV.pdf" download style="color:var(--accent);font-weight:600">Download my full CV ↓</a></p>
+  </section>
 
-<footer>© 2026 Shahwaiz Bilal · Riyadh, Saudi Arabia</footer>
+  <section id="contact" class="contact">
+    <div class="label">Contact</div>
+    <h3>Have a task that takes too long?</h3>
+    <p>I'm open to AI automation, business automation and data roles in Saudi Arabia. Tell me what slows your team down.</p>
+    <div class="btnrow">
+      <a class="btn primary" href="mailto:shahwaizsulehri098@gmail.com">shahwaizsulehri098@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/shahwaiz-bilal-360baa302" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <footer>Built by Shahwaiz Bilal in Riyadh. English (professional), Urdu (native), Arabic (basic) · Transferable Iqama · Saudi driving licence.</footer>
+</main>
+</div>
 
 <div id="zoom"><img alt=""></div>
 <script>
+document.addEventListener('pointermove',e=>{document.body.style.setProperty('--mx',e.clientX+'px');document.body.style.setProperty('--my',e.clientY+'px')});
 const z=document.getElementById('zoom'),zi=z.querySelector('img');
-document.querySelectorAll('.shot img,.proj .pic img').forEach(i=>i.addEventListener('click',()=>{zi.src=i.src;zi.alt=i.alt;z.style.display='flex'}));
+document.querySelectorAll('.shot img,.thumb img').forEach(i=>i.addEventListener('click',()=>{zi.src=i.src;zi.alt=i.alt;z.style.display='flex'}));
 z.addEventListener('click',()=>{z.style.display='none'});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')z.style.display='none'});
 document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
-  document.getElementById('wfimg').src='img/'+b.dataset.wf+'.svg';
+  document.getElementById('wfimg').src='img/'+b.dataset.wf+'-dark.svg';
 }));
+const links=[...document.querySelectorAll('.menu a')];
+const obs=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+en.target.id))}}),{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('main section').forEach(s=>obs.observe(s));
 </script>
 </body>
 </html>
